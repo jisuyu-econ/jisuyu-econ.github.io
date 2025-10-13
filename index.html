@@ -15,16 +15,17 @@
     a:hover{text-decoration:underline}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:88px 20px 40px}
     /* Nav */
-  .nav {
+.nav {
+  background: rgba(248, 249, 250, 0.95); /* 살짝 회색톤 흰색 */
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.9);  /* 약간 투명한 흰색 */
-  backdrop-filter: saturate(180%) blur(10px); /* 스크롤 시 은은한 블러 효과 */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* 얇은 구분선 */
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* 미세한 그림자 */
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 /* 헤더 내부 여백 및 정렬 */
 .nav-inner {
@@ -83,7 +84,7 @@
       <div>
         <h1>Jisu Yu</h1>
         <p class="meta">
-          Hello! I'm Hi! I’m a Ph.D. candidate in Economics at the University of Colorado, Boulder. 
+          Hello! I’m a Ph.D. candidate in Economics at the University of Colorado, Boulder. 
           My primary research interests are health, labor, and development economics, with a focus on human capital accumulation.   
           My job market paper examines the persistence of parent-led preventive healthcare in adolescence into adulthood.  
           I’m on the 2025-2026 academic job market.
