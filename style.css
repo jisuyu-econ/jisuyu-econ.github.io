@@ -31,10 +31,8 @@ header.site {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid #e5e7eb; /* ← 헤더 밑 구분선 추가 */
-  padding: 24px 0; /* 세로 여백 유지 */
+  border-bottom: 1px solid #e5e7eb; /* ✅ 헤더 전체 밑에 선 */
 }
-
 
 .nav {
   max-width: var(--max);
@@ -42,8 +40,10 @@ header.site {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.1rem 1rem; /* 내부 여백 살짝 키움 */
+  padding: 1.1rem 1rem;
+  background-color: #ffffff; /* ✅ 선이 뚜렷하게 보이도록 보강 */
 }
+
 
 .brand {
   font-weight: 700;
