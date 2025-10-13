@@ -17,15 +17,22 @@ body {
 a { color: #0b5fff; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* 헤더 및 네비게이션 */
+/* 컨테이너 */
+.wrap{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 88px 20px 40px; /* 필요하면 조정 */
+}
+
+/* 헤더 & 네비게이션 */
 header.site {
-  background-color: #ffffff; /* 흰색 배경 */
-  color: #000000; /* 검정 글씨 */
-  border: none;
+  background-color: #ffffff;
+  color: #000000;
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 20px 0;
+  border: none;
+  padding: 24px 0; /* ⬅ 세로 여백 넓힘 */
 }
 
 .nav {
@@ -34,7 +41,7 @@ header.site {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 1rem;
+  padding: 1.1rem 1rem; /* 내부 여백 살짝 키움 */
 }
 
 .brand {
@@ -53,18 +60,24 @@ header.site {
   color: #111;
 }
 
+/* 현재 페이지 표시 — 연한 박스 제거 */
 .menu a[aria-current="page"] {
-  background: #f1f5ff;
+  background: none;     /* 박스 제거 */
+  font-weight: 600;     /* 글자만 강조 (원하면 지워도 됨) */
+  /* 밑줄로 바꾸고 싶으면 위 두 줄 대신:
+  border-bottom: 2px solid #0b5fff;
+  padding-bottom: 2px;
+  */
 }
 
-/* 메인 컨테이너 */
+/* 메인 */
 main {
   max-width: var(--max);
   margin: 0 auto;
   padding: 1.25rem;
 }
 
-/* 프로필/히어로 섹션 */
+/* 히어로/프로필 */
 .hero {
   display: grid;
   grid-template-columns: 180px 1fr;
@@ -76,7 +89,7 @@ main {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 0; /* 네모 원하면 0으로 바꾸기 */
+  border-radius: 0 !important; /* 둥글게 되는 걸 전역에서 확실히 차단 */
   border: 1px solid #eee;
 }
 
@@ -87,7 +100,7 @@ section + section {
 
 /* 제목 */
 h1, h2, h3 { line-height: 1.25; }
-h1 { font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.2rem); }
+h1 { font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.2rem); margin: 0 0 0.25rem; }
 h2 { font-size: 1.25rem; margin-bottom: 0.25rem; }
 
 /* 리스트 */
@@ -125,5 +138,7 @@ ul.clean li { margin: 0.5rem 0; }
 
 /* 반응형 */
 @media (max-width: 720px) {
+  .wrap { padding: 76px 16px 32px; }
   .hero { grid-template-columns: 1fr; }
+  .hero img { width: 140px; height: 140px; }
 }
