@@ -18,14 +18,39 @@ a { color: #0b5fff; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* 헤더 및 네비게이션 */
+/* 헤더 전체를 남색 + 글씨 흰색 */
 header.site {
-  background-color: #1e3a8a; /* 진한 남색 (Tailwind 기준 'blue-900') */
-  color: #ffffff; /* 헤더 안의 기본 글씨색 흰색 */
+  background-color: #1e3a8a !important; /* 남색 */
+  color: #ffffff !important;
   border: none;
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
+/* 헤더 안의 컨테이너/내부 요소 배경 제거(투명화) */
+header.site .wrap,
+header.site nav,
+header.site .inner,
+header.site .container {
+  background: transparent !important;
+  border: none !important; /* 혹시 내부에 밑줄이 있으면 제거 */
+}
+
+/* 헤더 안 텍스트/링크를 흰색으로 */
+header.site a,
+header.site .logo,
+header.site .title,
+header.site .nav a {
+  color: #ffffff !important;
+}
+
+/* hover 시 가독성 유지(선택사항) */
+header.site a:hover,
+header.site .nav a:hover {
+  text-decoration: underline;
+}
+
 
 
 .nav {
