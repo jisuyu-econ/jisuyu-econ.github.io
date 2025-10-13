@@ -15,11 +15,27 @@
     a:hover{text-decoration:underline}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:88px 20px 40px}
     /* Nav */
-    .nav{
-      position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(8px);
-      border-bottom:1px solid var(--line);z-index:10
-    }
-    .nav-inner{max-width:var(--maxw);margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:18px}
+  .nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);  /* 약간 투명한 흰색 */
+  backdrop-filter: saturate(180%) blur(10px); /* 스크롤 시 은은한 블러 효과 */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* 얇은 구분선 */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* 미세한 그림자 */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 헤더 내부 여백 및 정렬 */
+.nav-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 22px 24px; /* ← 높이 조금 늘림 */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
     .brand{font-weight:700}
     .spacer{flex:1}
     .nav a{color:var(--fg)}
