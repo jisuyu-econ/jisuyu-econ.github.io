@@ -19,8 +19,8 @@ a:hover { text-decoration: underline; }
 
 /* 헤더 및 네비게이션 */
 header.site {
-  border-bottom: 1px solid #eee;
-  background: #fff;
+  border-bottom: 1px solid #bcc7db;
+  background: #d7e1f2; 
   position: sticky;
   top: 0;
   z-index: 100;
