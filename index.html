@@ -1,63 +1,134 @@
 <!doctype html>
-<a class="brand" href="/">Jisu Yu</a>
-<div class="menu">
-<a href="/">Home</a>
-<a href="/research.html">Research</a>
-<a href="/teaching.html">Teaching</a>
-<a href="/cv.html">CV</a>
-<a href="/cv.html#contact">Contact</a>
-</div>
-</nav>
-</header>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jisu Yu | Economics</title>
+  <style>
+    :root{
+      --fg:#1f2937; --muted:#6b7280; --link:#1d4ed8; --bg:#ffffff; --line:#e5e7eb;
+      --maxw: 1000px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:88px 20px 40px}
+    /* Nav */
+    .nav{
+      position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(8px);
+      border-bottom:1px solid var(--line);z-index:10
+    }
+    .nav-inner{max-width:var(--maxw);margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:18px}
+    .brand{font-weight:700}
+    .spacer{flex:1}
+    .nav a{color:var(--fg)}
+    .menu{display:flex;gap:16px;flex-wrap:wrap}
+    /* Hero */
+    .hero{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:start}
+    .photo{width:260px;height:260px;border-radius:18px;object-fit:cover;border:1px solid var(--line)}
+    h1{font-size:32px;margin:0 0 6px}
+    .subtitle{color:var(--muted);margin:0 0 8px}
+    .meta{color:var(--muted);margin:0 0 16px}
+    /* Sections */
+    section{margin-top:28px;padding-top:12px;border-top:1px solid var(--line)}
+    h2{font-size:22px;margin:0 0 12px}
+    h3{font-size:18px;margin:10px 0 6px}
+    ul{margin:8px 0 0 20px}
+    li{margin:6px 0}
+    .footer{margin-top:28px;color:var(--muted);font-size:14px}
+    /* Mobile */
+    @media (max-width: 780px){
+      .wrap{padding:76px 16px 32px}
+      .hero{grid-template-columns:1fr}
+      .photo{width:140px;height:140px;border-radius:16px}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">Jisu Yu</a>
+      <div class="spacer"></div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
 
+  <main class="wrap">
+    <!-- HERO -->
+    <div class="hero">
+      <img class="photo" src="assets/profile.jpg" alt="Portrait of Jisu Yu">
+      <div>
+        <h1>Jisu Yu</h1>
+        <p class="subtitle">Ph.D. Candidate in Economics, University of Colorado Boulder</p>
+        <p class="meta">
+          Job Market Candidate 2025–26 ·
+          <a href="mailto:jisu.yu@colorado.edu">jisu.yu@colorado.edu</a> ·
+          <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        </p>
 
-<main>
-<section class="hero">
-<img src="assets/profile.jpg" alt="Portrait of Jisu Yu" width="200">
-<div>
-<h1>Jisu Yu</h1>
-<p>Ph.D. Candidate in Economics</p>
-<p>
-Email: <a href="mailto:EMAIL@university.edu">jisu.yu@colorado.edu</a>
-· <a href="/cv.html">CV</a>
-· <a href="/research.html">Papers</a>
-</p>
-<p class="badge">Job Market Candidate 2025–26</p>
-</div>
-</section>
+        <section id="jmp">
+          <h2>Job Market Paper</h2>
+          <h3><em>[JMP Title Here]</em></h3>
+          <p>
+            One–two paragraph abstract summarizing your question, empirical strategy (OLS/PSM/LASSO with Add Health), and main results on persistence of preventive care habits from adolescence to adulthood.
+          </p>
+          <p>
+            <a href="[assets/jmp.pdf]" target="_blank" rel="noopener">Paper</a> ·
+            <a href="[assets/jmp_slides.pdf]" target="_blank" rel="noopener">Slides</a> ·
+            <a href="[assets/jmp_onepager.pdf]" target="_blank" rel="noopener">One-pager</a>
+          </p>
+        </section>
+      </div>
+    </div>
 
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research</h2>
+      <h3>Working Papers</h3>
+      <ul>
+        <li>
+          <strong>[WP 1 title]</strong> (with [coauthor]). 
+          <a href="[assets/wp1.pdf]" target="_blank" rel="noopener">PDF</a>
+        </li>
+        <li>
+          <strong>[WP 2 title]</strong>.
+          <a href="[assets/wp2.pdf]" target="_blank" rel="noopener">PDF</a>
+        </li>
+      </ul>
+      <h3>Works in Progress</h3>
+      <ul>
+        <li>Effects of adolescent exposure to peers with childhood abuse on adult IPV outcomes (Add Health restricted-use).</li>
+      </ul>
+    </section>
 
-<section>
-<h2>Job Market Paper</h2>
-<div class="card">
-<h3>Title of Your JMP</h3>
-<ul class="clean">
-<li><strong>Abstract.</strong> One–two paragraph summary of your question, method, and main results.</li>
-<li><a href="assets/Yu_JMP.pdf">Paper (PDF)</a> · <a href="assets/Yu_JMP_Slides.pdf">Slides</a> · <a href="assets/Yu_JMP_OnePager.pdf">One‑pager</a></li>
-</ul>
-</div>
-</section>
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li><strong>Principles of Microeconomics</strong> — TA (Fall 2021, 2022–2024, 2025)</li>
+        <li><strong>Principles of Macroeconomics</strong> — TA (Spring 2022, 2024, 2025)</li>
+        <li><strong>Intro to Statistics w/ Computer Applications</strong> — TA (Spring 2024)</li>
+      </ul>
+    </section>
 
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Department of Economics, University of Colorado Boulder<br>
+        Email: <a href="mailto:jisu.yu@colorado.edu">jisu.yu@colorado.edu</a>
+      </p>
+    </section>
 
-<section>
-<h2>Other Papers</h2>
-<ul class="clean">
-<li><strong>Working Paper 1</strong> (with Coauthor). <a href="assets/Yu_WP1.pdf">PDF</a></li>
-<li><strong>Working Paper 2</strong>. <a href="assets/Yu_WP2.pdf">PDF</a></li>
-</ul>
-</section>
-</main>
-
-
-<div class="footer">
-© <span id="year"></span> Jisu Yu · Last updated <span id="updated"></span>
-</div>
-
-
-<script src="script.js"></script>
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('updated').textContent = new Date().toISOString().slice(0,10);
-</script>
+    <div class="footer">© Jisu Yu · Last updated <!-- YYYY-MM --> </div>
+  </main>
 </body>
 </html>
