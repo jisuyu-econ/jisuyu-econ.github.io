@@ -143,3 +143,14 @@ ul.clean li { margin: 0.5rem 0; }
   .hero { grid-template-columns: 1fr; }
   .hero img { width: 140px; height: 140px; }
 }
+
+/* 헤더 이름 색상 고정 */
+header.site .brand {
+  color: #000;
+  text-decoration: none;
+}
+
+header.site .brand:hover {
+  color: #000;
+  text-decoration: none;
+}
