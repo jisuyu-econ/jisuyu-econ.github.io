@@ -31,9 +31,10 @@ header.site {
   position: sticky;
   top: 0;
   z-index: 100;
-  border: none;
-  padding: 24px 0; /* ⬅ 세로 여백 넓힘 */
+  border-bottom: 1px solid #e5e7eb; /* ← 헤더 밑 구분선 추가 */
+  padding: 24px 0; /* 세로 여백 유지 */
 }
+
 
 .nav {
   max-width: var(--max);
