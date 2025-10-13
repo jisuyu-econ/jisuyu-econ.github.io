@@ -103,7 +103,17 @@
       </p>
     </section>
 
-    <div class="footer">© Jisu Yu · Last updated <!-- YYYY-MM --> </div>
+<div class="footer">
+  © Jisu Yu · Last updated <span id="update-date"></span>
+</div>
+
+<script>
+  // 현재 날짜를 연-월(YYYY-MM) 형식으로 표시
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  document.getElementById('update-date').textContent = `${year}-${month}`;
+</script>
   </main>
 </body>
 </html>
