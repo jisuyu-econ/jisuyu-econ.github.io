@@ -1,52 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Teaching — Your Name</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching — Jisu Yu</title>
+  <!-- index.html에서 style을 분리해 style.css로 쓰는 경우에만 유지 -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- header -->
-<header class="site">
-<nav class="nav" role="navigation" aria-label="Main">
-<a class="brand" href="/">Your Name</a>
-<div class="menu">
-<a href="/">Home</a>
-<a href="/research.html">Research</a>
-<a href="/teaching.html">Teaching</a>
-<a href="/cv.html">CV</a>
-<a href="/cv.html#contact">Contact</a>
-</div>
-</nav>
-</header>
+  <!-- NAV: index.html과 같은 구조로 맞춤 -->
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">Jisu Yu</a>
+      <div class="spacer"></div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <!-- CV가 PDF라면 아래처럼 assets 경로로 연결 (대소문자 주의) -->
+        <a href="assets/CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html" class="active">Teaching</a>
+      </div>
+    </div>
+  </div>
 
+  <main class="wrap">
+    <h1>Teaching</h1>
 
-<main>
-<h1>Teaching</h1>
-
-
-<section>
-<h2>Instructor / TA</h2>
-<ul class="clean">
-<li>Microeconomics (Fall 2024, Instructor: Prof. X) — TA</li>
-<li>Econometrics (Spring 2025, Instructor: Prof. Y) — TA</li>
-</ul>
+ <section>
+  <h2>Teaching Assistant</h2>
+  <ul>
+    <li>
+      University of Colorado Boulder
+      <ul>
+        <li>Intermediate Microeconomic Theory - Fall 2025
+        <li>Introduction to Statistics with Computer Applications — Spring 2024</li>
+        <li>Principles of Microeconomics — Fall 2021, Fall 2022–Fall 2023, Fall 2024 </li>
+        <li>Principles of Macroeconomics — Spring 2022, Spring 2025 </li>
+      </ul>
+    </li>
+  </ul>
 </section>
 
 
-<section>
-<h2>Teaching Materials</h2>
-<ul class="clean">
-<li><a href="assets/Section1_Slides.pdf">Section 1 Slides</a></li>
-<li><a href="assets/ProblemSet1.pdf">Problem Set 1</a></li>
-</ul>
-</section>
-</main>
+    <div class="footer">© <span id="year"></span> Jisu Yu</div>
+  </main>
 
-
-<div class="footer">© <span id="year"></span> Your Name</div>
-<script src="script.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- 연도 자동 표기 -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
