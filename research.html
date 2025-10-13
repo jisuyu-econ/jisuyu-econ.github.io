@@ -1,57 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Research — Jisu Yu</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Jisu Yu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 제목 줄이 자동으로 줄바꿈되도록 */
+    section p strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+  </style>
 </head>
 <body>
-<!-- header -->
-<header class="site">
-<nav class="nav" role="navigation" aria-label="Main">
-<a class="brand" href="/">Jisu Yu</a>
-<div class="menu">
-<a href="/">Home</a>
-<a href="/research.html">Research</a>
-<a href="/teaching.html">Teaching</a>
-<a href="/cv.html">CV</a>
-<a href="/cv.html#contact">Contact</a>
-</div>
-</nav>
-</header>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">Jisu Yu</a>
+      <div class="spacer"></div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="assets/CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="teaching.html">Teaching</a>
+      </div>
+    </div>
+  </div>
 
+  <main class="wrap">
+    <h1>Research</h1>
 
-<main>
-<h1>Research</h1>
+    <!-- Job Market Paper -->
+    <section>
+      <h2>Job Market Paper</h2>
 
+      <p>
+        <strong>The Persistence of Parent-led Dental Healthcare Habits into Adulthood.</strong>
+        This study investigates whether preventive healthcare habits formed under parental influence during adolescence persist into adulthood.
+        Using data from the National Longitudinal Study of Adolescent to Adult Health (Add Health), the analysis estimates the effect of receiving dental examinations in adolescence on adulthood dental exams using a selection-on-observables framework.
+        In contrast to health behaviors analyzed in prior intergenerational transmission studies, dental exams are preventive, non-urgent, and largely independent of genetic or addictive influences.
+        Results show a strong and persistent effect of adolescent dental exams on adult dental exam behavior that is robust across OLS, propensity score matching, and LASSO-based variable selection.
+        <a href="assets/JMP_JisuYu_251009.pdf" target="_blank" rel="noopener">PDF</a>
+      </p>
+    </section>
 
-<section>
-<h2>Job Market Paper</h2>
-<p><strong>The Persistence of Parent-led Dental Healthcare Habits into Adulthood.</strong> This study investigates whether preventive healthcare habits formed under parental influence during adolescence persist into adulthood. Using data from the National Longitudinal Study of Adolescent to Adult Health (Add Health), the analysis estimates the effect of receiving dental examinations in adolescence on adulthood dental exams using a selection-on-observables framework. In contrast to health behaviors analyzed in prior intergenerational transmission studies, dental exams are preventive, non-urgent, and largely independent of genetic or addictive influences. Results show a strong and persistent effect of adolescent dental exams on adult dental exam behavior that is robust across OLS, propensity score matching, and LASSO-based variable selection. <a href="assets/JMP_JisuYu_251009.pdf">PDF</a> 
-</section>
+    <!-- Working Papers -->
+    <section>
+      <h2>Working Papers</h2>
 
+      <p>
+        <strong>The Long-run Effect of Light Manufacturing Expansion on Human Capital: Evidence from South Korea.</strong>
+        This paper estimates the effect of the Korean expansion of light manufacturing jobs in the 1960s on educational attainment using variation in exposure among 14-year-old cohorts.
+        Findings indicate that higher exposure to the expansion of light manufacturing jobs in adolescence decreased schooling.
+        Specifically, this reduction in schooling is attributed to a decline in middle school completion among girls and a decrease in both middle and high school completion among boys.
+        These results provide evidence of the relationship between labor-intensive job expansion and human capital accumulation.
+      </p>
+    </section>
 
-<section>
-<h2>Working Papers</h2>
-<ul class="clean">
-<li><strong>The Long-run Effect of Light Manufacturing Expansion on Human Capital: Evidence from South Korea:</strong>This paper estimates the effect of the Korean expansion of light manufacturing jobs in the 1960s on educational attainment using variation in exposure among 14-year-old cohorts. Findings indicate that higher exposure to the expansion of light manufacturing jobs in adolescence decreased schooling. Specifically, this reduction in schooling is attributed to a decline in middle school completion among girls and a decrease in both middle and high school completion among boys. These results provide evidence of the relationship between labor-intensive job expansion and human capital accumulation.</li> 
-</ul>  
-</section>
+    <!-- Work in Progress -->
+    <section>
+      <h2>Work in Progress</h2>
 
+      <p>
+        <strong>The Childhood Abuse Peer Effect on Violence in Adulthood.</strong>
+        This paper estimates the effect of exposure in adolescence to peers who experienced childhood abuse on intimate partner violence (IPV) outcomes in adulthood.
+        Using the variation in the proportion of middle or high school peers who experienced maltreatment at home before 6th grade, I estimate the peer effect on IPV perpetration and victimization in adulthood.
+      </p>
+    </section>
 
-<section>
-<h2>Work in Progress</h2>
-<ul class="clean">
-<li>The Childhood Abuse Peer Effect on Violence in
-Adulthood: In this paper, I estimate the effect of exposure in adolescence to peers who experienced childhood abuse on intimate partner violence (IPV) outcomes in adulthood. Using the variation in the proportion of middle or high school peers who experienced maltreatment at home before 6th grade, I estimate the peer effect on IPV perpetration and victimization in adulthood.</li>
-</ul>
-</section>
-</main>
+    <section id="contact-link">
+      <h2>Contact</h2>
+      <p>
+        For correspondence, see the <a href="index.html#contact">contact section on the home page</a>.
+      </p>
+    </section>
 
+    <div class="footer">© <span id="year"></span> Jisu Yu</div>
+  </main>
 
-<div class="footer">© <span id="year"></span> Jisu Yu</div>
-<script src="script.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
