@@ -6,63 +6,7 @@
   <title>Teaching — Jisu Yu</title>
   <!-- index.html에서 style을 분리해 style.css로 쓰는 경우에만 유지 -->
   <link rel="stylesheet" href="style.css" />
- <style>
-    :root{
-      --fg:#1f2937; --muted:#6b7280; --link:#1d4ed8; --bg:#ffffff; --line:#e5e7eb;
-      --maxw: 1000px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    a{color:var(--link);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:88px 20px 40px}
-    /* Nav */
-  .nav {
-  background: rgba(248, 249, 250, 0.95); /* 살짝 회색톤 흰색 */
-  backdrop-filter: saturate(180%) blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  }
 
-
-  /* 헤더 내부 여백 및 정렬 */
-  .nav-inner {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 22px 24px; /* ← 높이 조금 늘림 */
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  }
-
-    .brand{font-weight:700}
-    .spacer{flex:1}
-    .nav a{color:var(--fg)}
-    .menu{display:flex;gap:16px;flex-wrap:wrap}
-    /* Hero */
-    .hero{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:start}
-    .photo{width:260px;height:260px;border-radius:0;object-fit:cover;border:1px solid var(--line)}
-    h1{font-size:32px;margin:0 0 6px}
-    .subtitle{color:var(--muted);margin:0 0 8px}
-    .meta{color:var(--muted);margin:0 0 16px}
-    /* Sections */
-    section{margin-top:28px;padding-top:12px;border-top:1px solid var(--line)}
-    h2{font-size:22px;margin:0 0 12px}
-    h3{font-size:18px;margin:10px 0 6px}
-    ul{margin:8px 0 0 20px}
-    li{margin:6px 0}
-    .footer{margin-top:28px;color:var(--muted);font-size:14px}
-    /* Mobile */
-    @media (max-width: 780px){
-      .wrap{padding:76px 16px 32px}
-      .hero{grid-template-columns:1fr}
-      .photo{width:140px;height:140px;border-radius:0}
-    }
-  </style>
 </head>
 <body>
   <!-- NAV -->
