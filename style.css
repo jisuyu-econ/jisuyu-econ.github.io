@@ -87,8 +87,8 @@ main {
 }
 
 .hero img {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 0 !important; /* 둥글게 되는 걸 전역에서 확실히 차단 */
   border: 1px solid #eee;
