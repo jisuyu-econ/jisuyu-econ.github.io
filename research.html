@@ -28,12 +28,14 @@
       <h2>Job Market Paper</h2>
 
       <p>
-        <strong>The Persistence of Parent-led Dental Healthcare Habits into Adulthood.</strong>
+        <strong>The Persistence of Parent-led Dental Healthcare Habits into Adulthood.</strong> <a href="assets/JMP_JisuYu_251009.pdf" target="_blank" rel="noopener">PDF</a>
+      </p>
+
+      <p>
         This study investigates whether preventive healthcare habits formed under parental influence during adolescence persist into adulthood.
         Using data from the National Longitudinal Study of Adolescent to Adult Health (Add Health), the analysis estimates the effect of receiving dental examinations in adolescence on adulthood dental exams using a selection-on-observables framework.
         In contrast to health behaviors analyzed in prior intergenerational transmission studies, dental exams are preventive, non-urgent, and largely independent of genetic or addictive influences.
         Results show a strong and persistent effect of adolescent dental exams on adult dental exam behavior that is robust across OLS, propensity score matching, and LASSO-based variable selection.
-        <a href="assets/JMP_JisuYu_251009.pdf" target="_blank" rel="noopener">PDF</a>
       </p>
     </section>
 
@@ -42,7 +44,9 @@
       <h2>Working Papers</h2>
 
       <p>
-        <strong>The Long-run Effect of Light Manufacturing Expansion on Human Capital: Evidence from South Korea.</strong>
+        <strong>The Long-run Effect of Light Manufacturing Expansion on Human Capital: Evidence from South Korea.</strong> 
+      </p>
+      <p>
         This paper estimates the effect of the Korean expansion of light manufacturing jobs in the 1960s on educational attainment using variation in exposure among 14-year-old cohorts.
         Findings indicate that higher exposure to the expansion of light manufacturing jobs in adolescence decreased schooling.
         Specifically, this reduction in schooling is attributed to a decline in middle school completion among girls and a decrease in both middle and high school completion among boys.
@@ -56,24 +60,26 @@
 
       <p>
         <strong>The Childhood Abuse Peer Effect on Violence in Adulthood.</strong>
-        This paper estimates the effect of exposure in adolescence to peers who experienced childhood abuse on intimate partner violence (IPV) outcomes in adulthood.
-        Using the variation in the proportion of middle or high school peers who experienced maltreatment at home before 6th grade, I estimate the peer effect on IPV perpetration and victimization in adulthood.
+      </p>
+      <p>        
+      This paper estimates the effect of exposure in adolescence to peers who experienced childhood abuse on intimate partner violence (IPV) outcomes in adulthood.
+      Using the variation in the proportion of middle or high school peers who experienced maltreatment at home before 6th grade, I estimate the peer effect on IPV perpetration and victimization in adulthood.
       </p>
     </section>
 
-    <section id="contact-link">
-      <h2>Contact</h2>
-      <p>
-        For correspondence, see the <a href="index.html#contact">contact section on the home page</a>.
-      </p>
-    </section>
+<div class="footer">
+  © Jisu Yu · Last updated <span id="update-date"></span>
+</div>
 
-    <div class="footer">© <span id="year"></span> Jisu Yu</div>
-  </main>
+<script>
+  // 현재 날짜를 연-월(YYYY-MM) 형식으로 표시
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  document.getElementById('update-date').textContent = `${year}-${month}`;
+</script>
+</main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
 
